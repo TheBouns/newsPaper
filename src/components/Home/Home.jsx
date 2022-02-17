@@ -1,6 +1,8 @@
+import './Home.css'
 const Home = ()=>{
+    const string= "in progress";
     return(
-        <div>Component Home</div>
+        <div className="homeContainer">{string}</div>
     )
 }
 

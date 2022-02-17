@@ -18,12 +18,13 @@ const News = ()=>{
       }, []);
       console.log(news)
      const newsItem = news.map((item)=>(
-        
-        <p>{item.byline}</p>
+        <div className='newsContainer'>
+        <h1>{item.title}</h1><p>{item.abstract}{item.byline}</p>
+        </div>
      )
      );
     return(
-        <div>{newsItem}]!</div>
+        <div>{newsItem}</div>
     )
 }
 export default News;

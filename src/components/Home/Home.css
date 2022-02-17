@@ -1,0 +1,18 @@
+.homeContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10em;
+    transform: rotate(45deg);
+    margin-top: 1em;
+    animation-name: prueba;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    color:white
+    
+}
+@keyframes prueba {
+    from{background-color: black;}
+    to{background-color: blue;}
+    
+}
