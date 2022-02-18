@@ -1,0 +1,19 @@
+.newsContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    margin-top: 1em;
+
+    
+}
+img{
+    width: 100%;
+}
+.new{
+    border:solid 1px black;
+    width: auto;
+    margin-top: 1em;
+    width: 50%;
+}

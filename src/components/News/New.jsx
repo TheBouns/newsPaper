@@ -1,33 +1,26 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
+import React,{useContext, useEffect} from "react";
+import { GlobalContext } from "../../context/GlobalState";
+import './New.css'
 
-const News = () => {
-  const [news, setNews] = useState([]);
+const News =()=>{
+  const {news,getNews}   = useContext(GlobalContext);
+  useEffect(()=>{
+    getNews()
+  },);
+  const newItem= news.map((item)=>{
+    return(
+      
+      <div className="new" key={item.title} >
+          <img src={item.multimedia[1].url}></img>
+          <h2>{item.title}</h2>
+          <p>{item.abstract}</p>
+          <p>{item.byline}</p>
+          
+      </div>
+      
+    )
+  })
+  return <div className="newsContainer">{newItem}</div>
+}
 
-  const getNews = async () => {
-    try {
-      const response = await axios.get(
-        "https://api.nytimes.com/svc/topstories/v2/sports.json?api-key=0WpPTShc3tqz70ezkcATWr7zA0pyVNIC"
-      );
-      const data = response.data.results;
-      setNews(data);
-    } catch (error) {
-      console.error(error);
-    }
-  };
-  useEffect(() => {
-    getNews();
-  }, []);
-  console.log(news);
-  const newsItem = news.map((item) => (
-    <div className="newsContainer">
-      <h2>{item.title}</h2>
-      <p>
-        {item.abstract}
-        {item.byline}
-      </p>
-    </div>
-  ));
-  return <div>{newsItem}</div>;
-};
 export default News;
