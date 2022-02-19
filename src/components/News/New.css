@@ -1,9 +1,11 @@
 .newsContainer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
   margin-top: 2.5em;
+  width: 100%;
 }
 img {
   width: 100%;
@@ -17,13 +19,15 @@ img {
   justify-content: center;
   width: auto;
   margin-top: 2em;
+  margin-right: 1em;
   width: 30%;
   border-radius: 50px;
   -webkit-box-shadow: 0px 0px 12px 4px #dddddd;
   box-shadow: 0px 0px 12px 4px #dddddd;
 }
 .newInfo {
-  height: auto;
+  min-height: 20em;
+  max-height: auto;
   text-align: left;
   margin-left: 2em;
   margin-right: 2em;

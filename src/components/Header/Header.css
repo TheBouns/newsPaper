@@ -1,6 +1,6 @@
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   color: white;
@@ -24,6 +24,7 @@ a {
   cursor: pointer;
   color: black;
   height: 100%;
+  font-weight: 600;
 }
 
 .logo {

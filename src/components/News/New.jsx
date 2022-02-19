@@ -17,10 +17,10 @@ const News = () => {
             <h2>{item.title}</h2>
             <p>{item.abstract}</p>
             <div className="newFooter">
-              <p>{item.byline}</p>
+              <h4>{item.byline}</h4>
               <a href={item.url} target="_blank">
                 <h3>
-                  Read More
+                  More
                   <AiOutlineArrowRight />
                 </h3>
               </a>
