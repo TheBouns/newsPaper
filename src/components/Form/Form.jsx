@@ -4,7 +4,8 @@ export const Form = () => {
   const [data, setData] = useState({
     title: "",
     description: "",
-    author: "",
+    firstname: "",
+    lastname: "",
     location: "",
   });
 
@@ -21,8 +22,7 @@ export const Form = () => {
   };
   return (
     <div className="formContainer">
-      <h2>Public a NEW</h2>
-      <h3>Be free to share your local news with us.</h3>
+      <div className="formImage">sdsdsd</div>
       <form onSubmit={handleSubmit}>
         <label>Set The Title</label>
         <input
@@ -32,13 +32,21 @@ export const Form = () => {
           value={data.name}
           name="title"
         />
-        <label>Set your Name</label>
+        <label>First Name</label>
         <input
           type="text"
           placeholder="Please enter your name"
           onChange={inputChange}
           value={data.author}
-          name="author"
+          name="firstname"
+        />
+        <label>Last Name</label>
+        <input
+          type="text"
+          placeholder="Please enter your name"
+          onChange={inputChange}
+          value={data.author}
+          name="lastname"
         />
         <label>Location</label>
         {
