@@ -9,7 +9,8 @@ const News = () => {
     getNews();
   });
   const newItem = news.map((item) => {
-    if (item.title)
+    console.log(item.title);
+    if (item.multimedia && item.title)
       return (
         <div className="new" key={item.title}>
           <img src={item.multimedia[1].url}></img>
