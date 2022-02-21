@@ -7,37 +7,41 @@
   height: 95vh;
   background-image: url("https://res.cloudinary.com/ducxt7zb3/image/upload/v1645268653/grass-g8d67f791f_1920_bgn4hq.jpg");
 }
-.homeInfo{
-  border: solid white 1px;
+.sportsContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+  width: 90%;
+  margin-top: 3.5em;
+  color: white;
+  width: 100%;
+}
+.homeInfo {
   width: 100%;
   height: 95%;
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  gap: 3.5em;
 }
-.homeTitle{
+.homeTitle {
   margin-top: 1.5em;
-  font-size: 3em;
+  font-size: 5em;
   font-family: monospace;
   text-decoration: none;
 }
-.linkToNews{
+.linkToNews {
   width: 200px;
   height: 50px;
   background-color: rgb(26, 82, 238);
   color: white;
   display: flex;
   align-items: center;
-  justify-content: center ;
+  justify-content: center;
   border-radius: 5em;
-}
-.sports{
-  width: 90%;
-  margin-top: 3.5em;
-  color: white;
-  width: 100%;
 }
 h1 {
   font-size: 0.5em;
@@ -45,20 +49,18 @@ h1 {
 }
 .homeTitle {
   overflow: hidden;
-  border-right: .15em solid rgba(8, 8, 8, 0);
+  border-right: 0.15em solid rgba(8, 8, 8, 0);
   white-space: nowrap;
-  margin: 0 auto; 
-  letter-spacing: .15em; 
-  animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
-}
-@keyframes typing {
-  from { width: 0 }
-  to { width: 60% }
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
-/* @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: rgb(0, 0, 0); }
-} */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 90%;
+  }
+}

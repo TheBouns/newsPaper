@@ -40,46 +40,46 @@ form {
 }
 input,
 select,
-textarea{
+textarea {
   width: 300px;
   height: 50px;
   resize: none;
   border-radius: 1em;
   text-align: center;
   padding: 0;
-  outline: none ;
-  border: none; 
+  outline: none;
+  border: none;
 }
-select{
+select {
   height: 50px;
-  outline: none ;
-  border: none; 
+  outline: none;
+  border: none;
 }
-textarea{
+textarea {
   width: 500px;
   height: 100px;
 }
 button {
   color: white;
-  min-width: 500px;
-  min-height: 50px;
+  width: 500px;
+  height: 50px;
   resize: none;
   text-align: center;
   padding: 0;
-  outline: none ;
-  border: none; 
+  outline: none;
+  border: none;
   border-radius: 1em;
   background-color: rgb(26, 82, 238);
   font-family: "Cinzel Decorative", cursive;
   font-size: 1em;
 }
-.formTitle{
-  font-family: "Cinzel Decorative", cursive;  
+.formTitle {
+  font-family: "Cinzel Decorative", cursive;
   text-decoration: underline;
   font-size: 1.3em;
   margin-top: 1em;
   margin-left: 0.7em;
 }
-li{
+li {
   font-size: 1.3em;
 }
