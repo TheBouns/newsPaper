@@ -15,7 +15,7 @@ const News = () => {
         <div className="new" key={item.title}>
           <img src={item.multimedia[1].url}></img>
           <div className="newInfo">
-            <h2>{item.title}</h2>
+            <h2 className="newTitle">{item.title}</h2>
             <p>{item.abstract}</p>
             <div className="newFooter">
               <h4>{item.byline}</h4>

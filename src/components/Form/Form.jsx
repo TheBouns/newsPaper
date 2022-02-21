@@ -23,51 +23,64 @@ export const Form = () => {
   return (
     <div className="formContainer">
       <div className="formImage">
-        <h2>Create a New</h2>
-        <p>Share your local news with us</p>
+        <h2 className="formTitle">Become a publisher at SportsNews:</h2>
+        <h4>Share your local news with us!!</h4>
+        <ol>
+          <li>Set a Title</li>
+          <li>Set your name (also anonimus is accepted)</li>
+          <li>Lastname (if you selected anonimus dont write here)</li>
+          <li>Location</li>
+          <li>Description</li>
+          <li>After this our team will be take a look,do the corrections and pusblish your new</li>
+          <br/>
+          <p>*If you want at the end of the description you can provide your email for contact in case.</p>
+        </ol>
       </div>
       <form onSubmit={handleSubmit}>
         <div className="insideForm">
-          <label> Title</label>
+          
           <input
             type="text"
             placeholder="Title"
             onChange={inputChange}
             value={data.name}
             name="title"
+            required
           />
-          <label>First Name</label>
+          
           <input
             type="text"
-            placeholder="Please enter your name"
+            placeholder="First Name"
             onChange={inputChange}
             value={data.author}
             name="firstname"
           />
-          <label>Last Name</label>
+          
           <input
             type="text"
-            placeholder="Please enter your name"
+            placeholder="Lastname"
             onChange={inputChange}
             value={data.author}
             name="lastname"
           />
-          <label>Location</label>
+
           {
             <select name="location" onChange={inputChange} value={data.value}>
+              <option hidden selected>Location</option>
               <option value="Valencia">Valencia</option>
               <option value="Alicante">Alicante</option>
               <option value="Castellon">Castellon</option>
             </select>
           }
-          <label>Description</label>
+          
           <textarea
             placeholder="Description"
             onChange={inputChange}
             value={data.description}
             name="description"
+            required
           />
-          <label>osdkos</label>
+          
           <button type="submit">Send</button>
         </div>
       </form>
