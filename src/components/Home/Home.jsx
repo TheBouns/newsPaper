@@ -15,7 +15,7 @@ const Home = () => {
   <div className="homeContainer">
     <div className="sports">{sport}</div>
     <div className="homeInfo">
-      <h1 className="homeTitle">Welcome To Sports News Website</h1>
+      <h1 className="homeTitle">Welcome To SportsNews Website</h1>
       <Link to="/news" className="linkToNews">News</Link>
       
     </div>
