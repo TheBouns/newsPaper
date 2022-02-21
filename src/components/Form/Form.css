@@ -12,9 +12,10 @@
 }
 .formImage {
   width: 30%;
-  /* background-color: black; */
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
   height: 70vh;
   color: white;
   border: solid 2px black;
@@ -28,15 +29,39 @@ form {
   width: 70%;
   border: solid black 2px;
   height: 70vh;
-  /* background-color: white; */
+}
+.insideForm {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+  /* border: solid white 2px; */
+  color: aliceblue;
 }
 
 input,
 select,
-textarea,
-button {
-  height: 2em;
+textarea {
+  width: 300px;
+  height: 50px;
   resize: none;
   border-radius: 1em;
   text-align: center;
+  padding: 0;
+}
+label {
+  width: 5em;
+}
+button {
+  color: blue;
+  width: 300px;
+  height: 50px;
+  resize: none;
+  border-radius: 1em;
+  text-align: center;
+  padding: 0;
+  margin-right: 1em;
 }
